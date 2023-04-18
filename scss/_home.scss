@@ -1,0 +1,56 @@
+.inicio{
+    position: fixed;
+    z-index: 1;
+    background-color: map-get($map: $colores, $key:inicio );
+    width: map-get($map: $anchos, $key: w-100);
+    text-align: right;
+        a{
+            text-decoration: none;
+            color: map-get($map: $colores, $key: textColor);
+            margin-right: 10px;
+            font-weight: bolder;
+            transition: all 0.3s;
+                &:hover{
+                    color: map-get($map: $colores, $key: inicioHover);
+                }
+        }
+}                                   
+                                                         /*INICIO DE SESION*/
+
+article{
+    @include dflex(flex, center, center );
+        .card{
+            background-color: map-get($map: $colores, $key: darkbg );
+            text-align: center;
+            height: 400px;
+            margin: 10px 10px;
+            box-shadow:map-get($map: $shadows, $key: sombraMuyLeve);
+                &:hover{
+                    box-shadow:map-get($map: $shadows, $key: sombraLeve);
+                }
+                h3{
+                    color:map-get($map: $colores, $key: cardstxt );
+                }
+                img{
+                    width: map-get($map: $anchos, $key: w-100);
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .card-body{
+                    height: 75%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                        .btnCard:hover{
+                            @extend .btn;
+                            transform: scale(1.1);
+                            transition: all .3s;
+                        }
+                }
+        }
+}
+.catalogo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}

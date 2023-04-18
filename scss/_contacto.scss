@@ -1,0 +1,45 @@
+.containerForm{
+    @include dflex (flex, space-around, stretch);
+    height: 100vh;
+    width: map-get($map: $anchos, $key: w-100);
+    align-items: center;
+    flex-direction: column;
+        .formulario{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 3px solid map-get($map: $colores, $key:textColor );
+            background-color: map-get($map: $colores, $key: linea);
+            border-radius: 3px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: map-get($map: $anchos, $key: w-80);
+            height:50%;
+            text-align: center;
+                label{
+                    font-weight: bolder;
+                    color: map-get($map: $colores, $key: textColor );
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                }
+                input, textarea{
+                     display: inline;
+                    text-align: center;
+                    width: map-get($map: $anchos, $key: w-50);
+                    font-weight: bolder;
+                    color: map-get($map: $colores, $key: darktext);
+                    background-color: map-get($map: $colores,$key:textColor );
+                    max-height: 200px;
+                }
+                .formImg{
+                    width: map-get($map: $anchos, $key: w-10);
+                    display: flex;
+                    text-align: center;
+                }
+        }
+        iframe{
+            display: flex;
+            width: map-get($map: $anchos, $key: w-80);
+        }
+}

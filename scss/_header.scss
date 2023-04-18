@@ -1,0 +1,46 @@
+.header-index{
+    width: map-get($map: $anchos, $key: w-100);
+    height:92vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url(../img/fondo-header.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    background-position: center;
+}
+.header{
+    @extend .header-index;
+    background-attachment:scroll;
+    background-size: contain;
+    height:15vh;
+   } 
+nav{
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+        ul{
+          display: flex;
+          margin-left: 10px;
+          justify-content: center;
+            li{
+                list-style: none;
+                padding: 0;
+                margin:0px 20px;
+                display: flex;
+                display: inline-block;
+                align-items: center;
+                    a{
+                        color: map-get($map: $colores, $key:textColor);
+                        text-decoration: none;
+                        font-weight: bold;
+                            &:hover{
+                                color: map-get($map: $colores, $key: navHover);
+                                transition: .5s;
+                            }
+                    }
+            }
+        }
+}

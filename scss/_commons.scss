@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+main{
+    background-color: map-get($map: $colores, $key:main ) ;
+}
+h3{
+    text-align: center;
+    background-color: map-get($map: $colores, $key:darkbg );
+}
+h2, h1{
+    @extend h3;
+    color: map-get($map: $colores, $key: textColor );
+    line-height: 2.1em;
+    margin: 0;
+}
+
+p{
+    color: map-get($map: $colores, $key: textColor );
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.2em;
+}
+.linea{
+    border: 3px solid map-get($map: $colores, $key:linea);
+}
+.btn{
+    background-color: map-get($map: $colores, $key:main);
+    color: map-get($map: $colores, $key: textColor);
+    text-align: center;
+    font-weight: bolder;
+    width: map-get($map: $anchos, $key: w-fit);
+    display: flex;
+    height: min-content;
+    transition: all .3s;
+        &:hover{
+            background-color: map-get($map: $colores, $key: boton );
+            color: map-get($map: $colores, $key:textColor );
+        }
+}
