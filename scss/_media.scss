@@ -65,7 +65,7 @@
 } 
         //ENDS GALERIA
         //ALIMENTOS
-@media (max-width: 768px){
+@media (max-width: 767px){
     .alimento{
         width: map-get($map: $anchos, $key: w-80);
         height: 100%;
@@ -108,6 +108,9 @@
     }
     .product-image:focus-visible img {
         transform: scale(1.7, 1.7);
+    }
+    .header{
+        display: none;
     }
 }
 //parche header
