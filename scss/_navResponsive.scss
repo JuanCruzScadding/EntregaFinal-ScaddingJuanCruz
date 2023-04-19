@@ -6,22 +6,21 @@
       width: 100%;
       display: flex;
       display: flex;
-      justify-content: center;  
+      justify-content:flex-start;  
       align-items: center;
 
     }
     .hamburger {
-      position: absolute;
+      position: relative;
       background-color: transparent;
-      margin-top: 35px;
       left: 0;
       top: 0;
-      padding: 20px 20px;
       transform: translate3d(0, 0, 0);
       transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
       z-index: 1002;
       cursor: pointer;     
       overflow: visible;
+      margin: 35px 5%;
     }
     
     ._layer {
@@ -89,10 +88,9 @@
         li {
           list-style: none;
           text-align: center;
-          font-family: Verdadna, Arial, Helvetica;
           color: #fff;
           font-size: 1.5rem;
-          line-height: 3em;
+          line-height: 1.7em;
           height: 3em;
           text-transform: none;
           font-weight: bold;
@@ -112,6 +110,14 @@
     .logo{
       display: flex;
       justify-content: center;
+      align-items: center;
+      width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .logoT{
+      transform: translateX(20%);
     }
 }
 @media (min-width: 768px){

@@ -3,13 +3,14 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(../img/fondoerror404.jpg);
+    background-color: #547735;
+    //background-image: url(../img/fondoerror404.jpg);
     height: 100vh;
-    object-fit: cover;
+    background-size: cover;
         .error{
             display: flex;
             flex-direction: column;
-            width: map-get($map: $anchos, $key: w-80);      
+            width: map-get($map: $anchos, $key: w-70);      
             border-radius: 5px;
             font-size: 2.3em;
                 p{
@@ -21,6 +22,9 @@
                     text-align: center;
                     font-weight: bolder;
                     background-color: map-get($map: $colores, $key: darktext );
+                }
+                img{
+                    height: 10%;
                 }
         }
 }
