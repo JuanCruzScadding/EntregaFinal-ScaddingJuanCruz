@@ -46,6 +46,9 @@ article{
                             transform: scale(1.1);
                             transition: all .3s;
                         }
+                        h2{
+                            color: map-get($map: $colores, $key: cardstxt );
+                        }
                 }
         }
 }

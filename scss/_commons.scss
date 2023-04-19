@@ -9,15 +9,17 @@
 main{
     background-color: map-get($map: $colores, $key:main ) ;
 }
-h3{
+h2{
     text-align: center;
-    background-color: map-get($map: $colores, $key:darkbg );
+    background: map-get($map: $colores, $key:darkbg );
+    color: map-get($map: $colores, $key: textColor )
 }
-h2, h1{
-    @extend h3;
+h1{
+    @extend h2;
     color: map-get($map: $colores, $key: textColor );
     line-height: 2.1em;
     margin: 0;
+    width: 100%;
 }
 
 p{
@@ -42,4 +44,13 @@ p{
             background-color: map-get($map: $colores, $key: boton );
             color: map-get($map: $colores, $key:textColor );
         }
+}
+@mixin dflex ($d, $j, $a){
+    display: flex;
+    justify-content: $j;
+    align-content: $a;
+}
+@mixin wh-100 (){
+    height: 100%;
+    width: 100%;
 }

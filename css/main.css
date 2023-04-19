@@ -171,15 +171,17 @@ main {
   background-color: #222;
 }
 
-h3, h2, h1 {
+h2, h1 {
   text-align: center;
-  background-color: #111;
+  background: #111;
+  color: #fff;
 }
 
-h2, h1 {
+h1 {
   color: #fff;
   line-height: 2.1em;
   margin: 0;
+  width: 100%;
 }
 
 p {
@@ -242,7 +244,7 @@ article .card {
 article .card:hover {
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
 }
-article .card h3, article .card h2, article .card h1 {
+article .card h3 {
   color: #ccc;
 }
 article .card img {
@@ -259,6 +261,9 @@ article .card .card-body {
 article .card .card-body .btnCard:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+}
+article .card .card-body h2, article .card .card-body h1 {
+  color: #ccc;
 }
 
 .catalogo {
@@ -310,7 +315,7 @@ article .card .card-body .btnCard:hover {
   text-align: center;
   font-size: 1em;
 }
-.infoAlimento h2 {
+.infoAlimento h2, .infoAlimento h1 {
   display: inline-block;
   background-color: #222;
   position: relative;
@@ -467,6 +472,12 @@ article .card .card-body .btnCard:hover {
 .containerForm .formulario .formImg {
   width: 10%;
   display: flex;
+  text-align: center;
+}
+.containerForm .formulario .titulo h1 {
+  background-color: #424632;
+  font-size: 1em;
+  font-weight: bolder;
   text-align: center;
 }
 .containerForm iframe {
