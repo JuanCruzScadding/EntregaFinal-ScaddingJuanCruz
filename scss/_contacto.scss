@@ -18,9 +18,13 @@ form {
     display: block;
     margin-bottom: 10px;
     color: map-get($map: $colores, $key:textColor );
+      &:hover{
+        text-decoration: underline;
+      }
   }
 
   input[type="text"],
+  input[type="tel"],
   input[type="email"],
   textarea {
     width: 100%;

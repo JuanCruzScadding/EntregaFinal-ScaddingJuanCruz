@@ -3,12 +3,12 @@
     grid-template-columns: 90vw;
     grid-auto-rows: 150px;
     padding: 20px;
-    grid-gap: 10px;
+    grid-gap: 3px;
     justify-content: center;
         .item{
             display: flex;
             grid-row-start: span 2; 
-            border: 5px #232 solid;
+            border: 1px #232 solid;
 
                 .foto{
                     @include wh-100;

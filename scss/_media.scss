@@ -112,6 +112,9 @@
     .header{
         display: none;
     }
+    .info{
+        transform: translate(0);
+    }
 }
 //parche header
 @media (max-width:575px){
