@@ -21,7 +21,11 @@ Buenas! Como estan? Me llamo Juan Cruz, tengo 18 años y soy estudiante de Ingen
    ◦ Productos: Para cada producto puse una imagen, una breve descripcion y los botones correspondientes, use flex para volverlos responsive.
    
    ◦ Imagenes: Todas (o casi) las imagenes fueron descargadas de bancos de imagenes gratuitas. En un principio con muchisima calidad y grandes resoluciones. Luego todas fueron optimizadas y pasadas a formato .webp lo que no me deja conforme, ya que perdieron muchisima calidad, sinceramente no encontre un equilibrio entre calidad y lo que pesan las imagenes. Sin embargo, empece a notar que el sitio cargaba muchisimo mas rapido desde que implemente el formato .webp en las imagenes.
+   
+   ◦ Animaciones: Aplique las animaciones de animate.css por cdn.
+    
    ◦ Decidi hostear el sitio en vercel, ya que voy para el curso de react y la profesora recomendo ese sitio, por lo que me decidi a aprender a usarla.
+   
    
    El proyecto esta testeado en firefox, chrome y opera, hasta en un minimo de 280px.
    
